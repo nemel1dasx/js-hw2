@@ -1,4 +1,4 @@
-/* function stringCutter(text) {
+function stringCutter(text) {
   const maxLength = 30;
   if (text.length <= maxLength) {
     return text;
@@ -14,9 +14,9 @@ let thirdSentence = "And I want to remember it. I never want to forget it.";
 
 console.log(stringCutter(firstSentence));
 console.log(stringCutter(secondSentence));
-console.log(stringCutter(thirdSentence)); */
+console.log(stringCutter(thirdSentence));
 
-/* function registerInversion(text) {
+function registerInversion(text) {
   let invertedText = '';
   for (let i = 0; i < text.length; i++) {
     const char = text[i];
@@ -31,7 +31,7 @@ console.log(stringCutter(thirdSentence)); */
 
 console.log(registerInversion('WTF'));
 console.log(registerInversion('Be my Valentine'));
-console.log(registerInversion('Hello  World!')); */
+console.log(registerInversion('Hello  World!'));
 
 function bannedLetters(sentence, bannedWord) {
   const regex = new RegExp(`\\b${bannedWord}\\b`, "gi");
@@ -39,11 +39,11 @@ function bannedLetters(sentence, bannedWord) {
   return bannedSentence;
 }
 
-let firstSentence = "Follow the white raBbiT";
-let secondSentence = "Call me Ishmael";
-let thirdSentence = "Repent before bloody rabbit punish you!";
+let oneSentence = "Follow the white raBbiT";
+let twoSentence = "Call me Ishmael";
+let threeSentence = "Repent before bloody rabbit punish you!";
 let bannedWord = "rabbit";
 
-console.log(bannedLetters(firstSentence, bannedWord));
-console.log(bannedLetters(secondSentence, bannedWord));
-console.log(bannedLetters(thirdSentence, bannedWord));
+console.log(bannedLetters(oneSentence, bannedWord));
+console.log(bannedLetters(twoSentence, bannedWord));
+console.log(bannedLetters(threeSentence, bannedWord));
